@@ -57,7 +57,7 @@ void myserver::sockReady()
         if((doc.object().value("type").toString() == "select") && (doc.object().value("params").toString() == "workers"))
         {
             QFile file;
-            file.setFileName("/home/snake0x8/QtProgets/jsonserver/JsonData/workers.json");
+            file.setFileName("../JsonData/workers.json");
             if(file.open(QIODevice::ReadOnly|QFile::Text))
             {
 
